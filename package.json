@@ -1,0 +1,10 @@
+{
+    "name": "frontend_week5_mini_project_pokeapi_integration",
+    "version": "1.0.0",
+    "scripts": {
+        "test": "jest"
+    },
+    "dependencies": {
+        "node-fetch": "^2.7.0"
+    }
+}
