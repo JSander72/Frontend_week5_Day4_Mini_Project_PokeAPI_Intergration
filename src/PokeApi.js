@@ -1,5 +1,5 @@
 const fetch = require('node-fetch');
-const { Query }= required('../src/Query.php');
+const { Query }= require('../src/Query.php');
 
 // src/PokeApi.js
 
