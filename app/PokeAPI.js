@@ -1,8 +1,4 @@
-async function fetchPokemonData(pokemonName) {
-  const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
-  
- 
-}
+
 
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("search-pokemon").addEventListener("click", async () => {
@@ -20,18 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("searching for pokemon");
     } catch (error) {
       console.error('Error fetching the Pokémon data:', error);
-    } 
-    
-    if (!response.ok) {
-    throw new Error('Network response was not ok');
-  }
-  
-  const pokemonData = await response.json();
-  return pokemonData;
+    }
   });
 });
 
-// Assuming you have an input field in your HTML
-// <input type="text" id="pokemon-name" />
-
-// Removed redundant input handler and event listener
+async function fetchPokemonData(pokemonName) {
+  const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+  
+}
